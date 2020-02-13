@@ -1,10 +1,12 @@
 class WardrobeCombinations
-  def initialize(elements, space)
-    @elements = elements
-    @space = space
+  def initialize(wardrobe_elements, wardrobe_length)
+    @wardrobe_elements = wardrobe_elements
+    @wardrobe_length = wardrobe_length
+    @output_array = []
   end
 
-  def calculate_combinations
-    [50,50,50,50,50]
+  def return_combinations
+    (@wardrobe_length/@wardrobe_elements[0]).times { @output_array << @wardrobe_elements[0] }
+    @output_array
   end
 end
