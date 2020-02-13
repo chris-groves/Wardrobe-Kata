@@ -4,7 +4,7 @@ class WardrobeCombinations
   end
 
   def return_combinations(wardrobe_elements, wardrobe_length)
-    (wardrobe_length / wardrobe_elements[0]).times { @output_array << wardrobe_elements[0]}
+    (wardrobe_length / wardrobe_elements).times { @output_array << wardrobe_elements}
     @output_array
   end
 end
